@@ -55,4 +55,8 @@ git clone '远程仓库名'
 #### 远程分支退回到上次修改  
 `git push origin HEAD --force`  
 #### 恢复某个文件  
-`git checkout -- 文件名`  
+`git checkout -- 文件名`    
+#### 修改已跟踪文件名  
+`git mv 旧文件名 新文件名`  
+####  git链接远程库失败  
+`百度查ip地址`
