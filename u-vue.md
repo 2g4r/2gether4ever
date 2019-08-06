@@ -9,7 +9,7 @@ var schcode = new Vue({
 `<div id="ul_schcode">{{name}}</div>`  
 ```
 var schcode = new Vue({
-	el:'#ul_schcode',//“,”逗号必写，el指这个vue操作的组件名，可以是id，也可以是class
+	el:'#ul_schcode',//“,”逗号必写，el指这个vue操作的组件名，可以是id，也可以是class,还可以是dom（唯一dom）
 	data:{
 		name:'sss'
 	}

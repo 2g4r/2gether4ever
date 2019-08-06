@@ -1,0 +1,48 @@
+**let**  
++ 声明变量，但是只在let所在的代码块内有效  
++ 不允许在相同作用域内重复声明一个变量  
++ var在声明之前使用，let不可以，它所声明的变量一定要在声明之后使用  
+
+**const**  
++ 常量，一旦定义永不改变  
++ 一旦声明const，必须给其赋值（const必有初值）  
++ 除了可指定为数字，布尔值之外，还可以为对象  
++ 作用域与let一样  
+
+**数组**  
+```
+var [a,b,c] = [1,2,3] -------------------------------------a=1,b=2,c=3  
+var [a, ,c] = [1,2,3]-------------------------------------a=1,c=3  
+var [a,...c] = [1,2,3]-------------------------------------a=1,c=[2,3]  
+**指定默认值**  
+var [a,b,c='default',d='default'] = [1,2,3]-------------------------------------a=1,b=2,c=3,d='default'
+```  
+**新增字符串方法**  
++  `str.includes('a')`  str中是否包含'a'  
++  `str.startsWith('a')`  str是否以字符串a开始    
++  `str.endsWith('a')`    str是否以字符串a结束   
++  `str.reoeat('次数')`  将str重复N次  
+**模板字符串**  
+```
+let str = `<div>
+<span>1</span>
+</div>
+`
+```  
+**symbol类型**
++ 旧类型：undefined，null，boolean。string，number，object  
++ 新增类型：synbol  
+**proxy：代理**  
+```
+	var uesr = new Proxy({},{
+		get:function(obj,prop){
+			switch(prop){
+				case 'full_case':
+				return obj.fname + ' ' + obj.lastbane
+			}
+		},
+		set:function(obj,prop){
+			...
+		}
+	})
+```  

@@ -65,3 +65,8 @@ text-overflow:ellipsis;//溢出省略号显示
 * `:first-child` 匹配的第一个元素添加样式
 
 **a使用伪类的时候顺序必须为：link ,visited,hover,active**
+
+#### meta  
+
+`<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">`  
+阻止网页自己放大或缩小  
